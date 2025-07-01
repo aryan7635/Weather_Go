@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #74abe2, #5563de);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px 40px 20px 40px ;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+}
+
+#cityName{
+    font-size: 16px;
+    width: 93%;
+}
+input, button {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+}
+
+input {
+  color: #333;
+}
+
+button {
+  background-color: #ff9800;
+  color: #fff;
+  cursor: pointer;
+}
+
+.weather {
+  margin-top: 20px;
+}
