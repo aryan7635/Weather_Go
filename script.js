@@ -1,4 +1,4 @@
-import { api_key } from './config.js';
+import { apiKey } from './config.js'; 
 
 document.getElementById('weatherForm').addEventListener('submit', function(e) {
   e.preventDefault();
