@@ -1,4 +1,4 @@
-import { apiKey } from './config.js'; 
+import { apiKey , url} from'./config.js';
 
 document.getElementById('weatherForm').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -9,10 +9,9 @@ document.getElementById('weatherForm').addEventListener('submit', function(e) {
 });
 
 async function getWeather(city) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric`;
-
+  const fullUrl = `${url}?q=${city}&appid=${apiKey}&units=metric`;
   try {
-    const response = await fetch(url);
+    const response = await fetch(fullUrl);
     if (!response.ok) throw new Error('City not found');
     const data = await response.json();
     showWeather(data);
